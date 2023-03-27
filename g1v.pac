@@ -5,7 +5,7 @@ if (shExpMatch(host, "*.googleapis.com") ||
     shExpMatch(host, " gstatic.com")
    
    ) {
-return "SOCKS5 127.0.0.1:7777; PROXY 127.0.0.1:7777; PROXY 192.168.0.3:7890";
+return "PROXY 127.0.0.1:7777; PROXY 192.168.0.3:7890";
 } else {
 return "DIRECT";
 }
